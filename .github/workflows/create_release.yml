@@ -39,23 +39,24 @@ jobs:
           filename: 'resourcepack.zip'
           exclusions: '*.md *.txt *.psd *.rtf'
       
-      - name: Upload to release
-        uses: JasonEtco/upload-to-release@master
-        with:
-          args: resourcepack.zip application/zip
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+      # Generate SHA1
       - name: Generate SHA1
         id: hash
         uses: MCJack123/ghaction-generate-release-hashes@v3
         with:
           hash-type: sha1
-    
-      - name: update release
-        id: update_release
-        uses: tubone24/update_release@v1.0
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+          file-name: hashes.txt
+      
+      - name: Upload pack
+        uses: JasonEtco/upload-to-release@master
         with:
-          body: ${{ steps.hash.hashes }}
+          args: resourcepack.zip application/zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Upload hashes
+        uses: JasonEtco/upload-to-release@master
+        with:
+          args: hashes.txt
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
