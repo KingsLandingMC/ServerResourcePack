@@ -1,0 +1,18 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/gold_nugget"
+	},
+	
+	"overrides": [
+		{"predicate": {"custom_model_data":1}, "model": "item/money_1"},
+		{"predicate": {"custom_model_data":2}, "model": "item/money_5"},
+		{"predicate": {"custom_model_data":3}, "model": "item/money_10"},
+		{"predicate": {"custom_model_data":4}, "model": "item/money_50"},
+		{"predicate": {"custom_model_data":5}, "model": "item/money_100"},
+		{"predicate": {"custom_model_data":6}, "model": "item/money_500"},
+		{"predicate": {"custom_model_data":7}, "model": "item/money_1k"},
+		{"predicate": {"custom_model_data":8}, "model": "item/money_5k"},
+		{"predicate": {"custom_model_data":9}, "model": "item/money_10k"}
+	]
+}

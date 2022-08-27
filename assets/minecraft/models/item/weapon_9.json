@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld_cb",
+    "textures": {
+        "layer0": "item/weapon_9"
+    }
+}

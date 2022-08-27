@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/written_book"
+    }
+    "overrides": [
+        {"predicate": {"custom_model_data":1}, "model": "item/book_1"},
+        {"predicate": {"custom_model_data":2}, "model": "item/book_2"},
+        {"predicate": {"custom_model_data":3}, "model": "item/book_3"},
+        {"predicate": {"custom_model_data":4}, "model": "item/book_4"},
+        {"predicate": {"custom_model_data":5}, "model": "item/book_5"},
+        {"predicate": {"custom_model_data":6}, "model": "item/book_6"}
+    ]
+}
