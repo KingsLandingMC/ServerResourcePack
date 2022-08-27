@@ -2,7 +2,7 @@
     "parent": "item/generated",
     "textures": {
         "layer0": "item/written_book"
-    }
+    },
     "overrides": [
         {"predicate": {"custom_model_data":1}, "model": "item/book_1"},
         {"predicate": {"custom_model_data":2}, "model": "item/book_2"},
