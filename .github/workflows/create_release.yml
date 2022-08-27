@@ -64,6 +64,6 @@ jobs:
       - name: Upload hash text
         uses: JasonEtco/upload-to-release@master
         with:
-          args: sha1.txt
+          args: sha1.txt application/zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
