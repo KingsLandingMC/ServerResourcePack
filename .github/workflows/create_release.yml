@@ -50,7 +50,7 @@ jobs:
         uses: DamianReeves/write-file-action@master
         with:
           path: hashes.txt
-          contents: ${{ steps.hash.output.hashes }}
+          contents: ${{ steps.hashgen.output.hashes }}
           write-mode: overwrite
       
       - name: Upload pack
