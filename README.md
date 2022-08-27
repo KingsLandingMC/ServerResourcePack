@@ -1,0 +1,2 @@
+# ServerResourcePack
+Server Resource Pack
