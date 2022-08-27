@@ -4,7 +4,8 @@ name: Create Release
 
 # Controls when the workflow will run
 on:
-  release: [published]
+  release:
+    types: [published]
 
 env:
   GITHUB_TOKEN: ${{ github.token }}
