@@ -41,11 +41,11 @@ jobs:
         uses: MCJack123/ghaction-generate-release-hashes@v3
         with:
           hash-type: sha1
-          file-name: hashes.txt
+          get-assets: true
       - name : SHA1 to file
         uses: DamianReeves/write-file-action@master
         with:
-          path: ${{ env.home}}/.bashrc
+          path: hashes.txt
           contents: ${{ steps.hash.hashes }}
           write-mode: overwrite
       # Runs a single command using the runners shell
