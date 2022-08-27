@@ -42,15 +42,16 @@ jobs:
         with:
           hash-type: sha1
           get-assets: true
+      - name: Echo
+        run: |
+          echo List of hashes
+          echo ${{ steps.hash.hashes }}
       - name : SHA1 to file
         uses: DamianReeves/write-file-action@master
         with:
           path: hashes.txt
           contents: ${{ steps.hash.hashes }}
           write-mode: overwrite
-      # Runs a single command using the runners shell
-      - name: Echo
-        run: echo ${{ steps.hash.hashes }}
       
       - name: Upload pack
         uses: JasonEtco/upload-to-release@master
