@@ -6,6 +6,10 @@ name: Create Release
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  
+  push:
+    tags:
+    - '*'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -13,7 +17,10 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
+    
+    permissions:
+      contents: read write
+      
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -23,17 +30,18 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
       
-      # Release as Zip
+      # Create Zip
       - name: Zip Release
         uses: TheDoctor0/zip-release@0.6.2
         with:
           type: 'zip'
-          filename: 'resourcepack.zip'
+          filename: 'releases/resourcepack.zip'
           exclusions: '*.md *.txt *.psd *.rtf'
-          
-      # Create SHA1 key
-      - name: Generate Release Hashes
-        uses: MCJack123/ghaction-Generate-Release-Hashes@v3
+      
+      # Create Release
+      - name: Create Release
+        uses: ncipollo/release-action@v1.10.0
         with:
-          hash-type: sha1
-          file-name: release_sha1.txt
+          artifacts: "releases/resourcepack.zip"
+          bodyFile: "releases/resourcepack.zip"
+
