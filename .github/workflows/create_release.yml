@@ -35,13 +35,13 @@ jobs:
         uses: TheDoctor0/zip-release@0.6.2
         with:
           type: 'zip'
-          filename: 'releases/resourcepack.zip'
+          directory: .
+          filename: 'resourcepack.zip'
           exclusions: '*.md *.txt *.psd *.rtf'
       
       # Create Release
       - name: Create Release
         uses: ncipollo/release-action@v1.10.0
         with:
-          artifacts: "releases/resourcepack.zip"
-          bodyFile: "releases/resourcepack.zip"
+          artifacts: "resourcepack.zip"
 
