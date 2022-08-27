@@ -45,8 +45,9 @@ jobs:
           exclusions: '*.md *.txt *.psd *.rtf'
       
       # Create Release
-      - name: Create Release
-        uses: ncipollo/release-action@v1.10.0     
+      - name: Upload Resource Pack zip
+        uses: actions/upload-artifact@v3
         with:
-          artifacts: "resourcepack.zip"
+          name: Resource Pack
+          path: resourcepack.zip
 
