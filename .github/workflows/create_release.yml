@@ -37,20 +37,20 @@ jobs:
       
       # Generate SHA1
       - name: Generate SHA1
-        id: hash
+        id: hashgen
         uses: MCJack123/ghaction-generate-release-hashes@v3
         with:
           hash-type: sha1
           get-assets: true
       - name: Echo
         run: |
-          echo List of hashes
-          echo ${{ steps.hash.hashes }}
+          echo "SHA1 hashes:"
+          echo ${{ steps.hashgen.output.hashes }}
       - name : SHA1 to file
         uses: DamianReeves/write-file-action@master
         with:
           path: hashes.txt
-          contents: ${{ steps.hash.hashes }}
+          contents: ${{ steps.hash.output.hashes }}
           write-mode: overwrite
       
       - name: Upload pack
