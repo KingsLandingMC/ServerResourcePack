@@ -1,0 +1,80 @@
+{
+  "rpack.music.horstwessel": {
+    "category": "record",
+    "sounds": [
+      "music/horstwessel"
+    ]
+  },
+  "rpack.music.ussr": {
+    "category": "record",
+    "sounds": [
+      "music/ussr_anthem"
+    ]
+  },
+  "rpack.music.erika": {
+    "category": "record",
+    "sounds": [
+      "music/erika"
+    ]
+  },
+  "rpack.music.elevatormusic": {
+    "category": "record",
+    "sounds": [
+      "music/elevatormusic"
+    ]
+  },
+  "rpack.music.gta_sa_missionpassed": {
+    "category": "record",
+    "sounds": [
+      "music/gta_sa_missionpassed"
+    ]
+  },
+  "rpack.music.moontheme": {
+    "category": "record",
+    "sounds": [
+      "music/moontheme"
+    ]
+  },
+  "rpack.music.blackops_mp_theme": {
+    "category": "record",
+    "sounds": [
+      "music/blackops_mp_theme"
+    ]
+  },
+  "rpack.music.mc_calm4": {
+    "category": "record",
+    "sounds": [
+      "music/mc_calm4"
+    ]
+  },
+  "rpack.music.the_fallen": {
+    "category": "record",
+    "sounds": [
+      "music/the_fallen"
+    ]
+  },
+  "rpack.ambient.caves": {
+    "category": "ambient",
+    "sounds": [
+      "ambient/caves"
+    ]
+  },
+  "rpack.ambient.subway": {
+    "category": "ambient",
+    "sounds": [
+      "ambient/subway"
+    ]
+  },
+  "rpack.fx.winxp_startup": {
+    "category": "record",
+    "sounds": [
+      "fx/winxp_startup"
+    ]
+  },
+  "rpack.fx.winxp_shutdown": {
+    "category": "record",
+    "sounds": [
+      "fx/winxp_shutdown"
+    ]
+  }
+}
