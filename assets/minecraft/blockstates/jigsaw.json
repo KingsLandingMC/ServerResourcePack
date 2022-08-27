@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=east": { "model": "block/custom_jigsaw" },
+        "facing=south": { "model": "block/custom_jigsaw", "y": 90 },
+        "facing=west": { "model": "block/custom_jigsaw", "y": 180 },
+        "facing=north": { "model": "block/custom_jigsaw", "y": 270 },
+        "facing=up": { "model": "block/custom_jigsaw_up"},
+        "facing=down": { "model": "block/custom_jigsaw_down"}
+    }
+}
