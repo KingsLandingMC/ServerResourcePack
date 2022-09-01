@@ -1,10 +1,10 @@
 {
     "variants": {
-        "facing=east": { "model": "block/custom_jigsaw" },
-        "facing=south": { "model": "block/custom_jigsaw", "y": 90 },
-        "facing=west": { "model": "block/custom_jigsaw", "y": 180 },
-        "facing=north": { "model": "block/custom_jigsaw", "y": 270 },
-        "facing=up": { "model": "block/custom_jigsaw_up"},
-        "facing=down": { "model": "block/custom_jigsaw_down"}
+        "orientation=east": { "model": "block/custom_jigsaw" },
+        "orientation=south": { "model": "block/custom_jigsaw", "y": 90 },
+        "orientation=west": { "model": "block/custom_jigsaw", "y": 180 },
+        "orientation=north": { "model": "block/custom_jigsaw", "y": 270 },
+        "orientation=up": { "model": "block/custom_jigsaw_up"},
+        "orientation=down": { "model": "block/custom_jigsaw_down"}
     }
 }
