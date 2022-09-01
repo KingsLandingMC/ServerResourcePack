@@ -65,6 +65,12 @@
       "ambient/subway"
     ]
   },
+  "rpack.ambient.city": {
+    "category": "ambient",
+    "sounds": [
+      "ambient/city"
+    ]
+  },
   "rpack.ambient.mall": {
     "category": "ambient",
     "sounds": [
