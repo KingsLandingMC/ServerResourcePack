@@ -77,6 +77,12 @@
       "ambient/mall"
     ]
   },
+    "rpack.ambient.controlroom": {
+    "category": "ambient",
+    "sounds": [
+      "ambient/controlroom"
+    ]
+  },
   "rpack.fx.winxp_startup": {
     "category": "record",
     "sounds": [
