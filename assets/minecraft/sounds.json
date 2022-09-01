@@ -65,6 +65,12 @@
       "ambient/subway"
     ]
   },
+  "rpack.ambient.mall": {
+    "category": "ambient",
+    "sounds": [
+      "ambient/mall"
+    ]
+  },
   "rpack.fx.winxp_startup": {
     "category": "record",
     "sounds": [
