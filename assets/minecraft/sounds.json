@@ -83,6 +83,12 @@
       "ambient/controlroom"
     ]
   },
+  "rpack.ambient.credo": {
+    "category": "ambient",
+    "sounds": [
+      "ambient/credo"
+    ]
+  },
   "rpack.fx.winxp_startup": {
     "category": "record",
     "sounds": [
