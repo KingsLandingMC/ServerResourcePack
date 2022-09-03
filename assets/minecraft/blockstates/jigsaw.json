@@ -11,6 +11,6 @@
         "orientation=down_east": { "model": "block/custom_jigsaw_down"},
         "orientation=down_south": { "model": "block/custom_jigsaw_down"},
         "orientation=down_west": { "model": "block/custom_jigsaw_down"},
-        "orientation=down_north": { "model": "block/custom_jigsaw_down"},
+        "orientation=down_north": { "model": "block/custom_jigsaw_down"}
     }
 }
