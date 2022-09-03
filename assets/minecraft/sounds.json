@@ -89,6 +89,18 @@
       "ambient/credo"
     ]
   },
+  "rpack.ambient.construction": {
+    "category": "ambient",
+    "sounds": [
+      "ambient/construction"
+    ]
+  },
+  "rpack.ambient.restaurant": {
+    "category": "ambient",
+    "sounds": [
+      "ambient/restaurant"
+    ]
+  },
   "rpack.fx.winxp_startup": {
     "category": "record",
     "sounds": [
