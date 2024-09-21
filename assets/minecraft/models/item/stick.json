@@ -5,9 +5,6 @@
 	},
 	
 	"overrides": [
-		{"predicate": {"custom_model_data":1}, "model": "item/wrench"},
-		{"predicate": {"custom_model_data":2}, "model": "item/screwdriver"},
-		{"predicate": {"custom_model_data":3}, "model": "item/magnifier"},
 		{"predicate": {"custom_model_data":101}, "model": "item/citybuilder/cbitem_01"},
 		{"predicate": {"custom_model_data":101}, "model": "item/citybuilder/cbitem_01"},
 		{"predicate": {"custom_model_data":102}, "model": "item/citybuilder/cbitem_02"},

@@ -1,0 +1,24 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "minecraft:item/shears"
+	},
+	"overrides": [
+		{
+			"predicate": { "custom_model_data": 1 },
+			"model": "item/copper_shears"
+		},
+		{
+			"predicate": { "custom_model_data": 2 },
+			"model": "item/wrench"
+		},
+		{
+			"predicate": { "custom_model_data": 3 },
+			"model": "item/screwdriver"
+		},
+		{
+			"predicate": { "custom_model_data": 4 },
+			"model": "item/magnifier"
+		}
+	]
+}
